@@ -1,4 +1,5 @@
 @import "colors";
+@import "fonts";
 
 * {
     box-sizing: border-box;
@@ -7,7 +8,7 @@
 body {
   background-image: linear-gradient(to bottom right, $topLeft, $middle, $bottomRight);
   background-attachment: fixed;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $mainFont;
   color: $primary;   
   padding: 2%;
 }
@@ -33,13 +34,13 @@ img {
   
 #desc-first {          
   color: $descriptionFirst;
-  font-size: 16px;  
+  font-size: $normal;
   font-weight: bold;
 }
   
 #desc-second {      
   color: $primary;
-  font-size: 22px;      
+  font-size: $large;
   font-weight: bold;
 }
   
@@ -60,7 +61,7 @@ form {
 }
   
 label {
-  font-size: 10px;      
+  font-size: $small;
 }
   
 .star {
@@ -70,7 +71,7 @@ label {
 .fields {
   width: 100%;
   border: none;    
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid $border;
   margin: 3% 0%;
 }
   
@@ -99,7 +100,7 @@ label {
   }
   
   #title {
-    font-size: 24px;
+    font-size: $larger;
     font-weight: lighter;
   }
 }
