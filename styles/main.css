@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #001684, #0E83AF, #D7F7C5);
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 2%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#second-row {
+  display: flex;
+  flex-direction: column;
+}
+
+#desc {
+  margin-top: 5%;
+}
+
+#desc-first {
+  color: #1EB5FA;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#desc-second {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+aside {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 3%;
+}
+
+form {
+  width: 100%;
+  margin: auto;
+  font-weight: bold;
+  padding: 3% 3% 0% 3%;
+}
+
+label {
+  font-size: 10px;
+}
+
+.star {
+  color: red;
+}
+
+.fields {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+  margin: 3% 0%;
+}
+
+#submit-button {
+  width: 50%;
+  background-color: #FE796A;
+  color: white;
+  padding: 3% 5%;
+  margin: 5% 25%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  #second-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 50%;
+  }
+
+  aside {
+    width: 30%;
+  }
+
+  #title {
+    font-size: 24px;
+    font-weight: lighter;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
