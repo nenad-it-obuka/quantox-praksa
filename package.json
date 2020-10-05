@@ -1,0 +1,19 @@
+{
+  "name": "quantox-praksa",
+  "version": "1.0.0",
+  "description": "Web development internship project at Quantox Technology company, Belgrade RS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nenad-it-obuka/quantox-praksa.git"
+  },
+  "author": "Nenad Dicic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nenad-it-obuka/quantox-praksa/issues"
+  },
+  "homepage": "https://github.com/nenad-it-obuka/quantox-praksa#readme"
+}

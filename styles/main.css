@@ -10,23 +10,24 @@ body {
   padding: 2%;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-}
-
 img {
   max-width: 100%;
   height: auto;
 }
 
-#second-row {
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1%;
+}
+
+main {
   display: flex;
   flex-direction: column;
 }
 
-#desc {
-  margin-top: 5%;
+section {
+  padding-top: 4%;
 }
 
 #desc-first {
@@ -36,25 +37,27 @@ img {
 }
 
 #desc-second {
-  color: white;
   font-size: 22px;
   font-weight: bold;
 }
 
-aside {
-  width: 100%;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 3%;
+#web-graphic {
+  max-width: 80%;
 }
 
 form {
   width: 100%;
-  margin: auto;
+  padding: 8%;
+  color: black;
+  background-color: white;
   font-weight: bold;
-  padding: 3% 3% 0% 3%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#title {
+  font-size: 24px;
+  font-weight: lighter;
 }
 
 label {
@@ -67,38 +70,34 @@ label {
 
 .fields {
   width: 100%;
+  margin: 3% 0%;
   border: none;
   border-bottom: 1px solid grey;
-  margin: 3% 0%;
 }
 
 #submit-button {
   width: 50%;
-  background-color: #FE796A;
-  color: white;
   padding: 3% 5%;
-  margin: 5% 25%;
-  border-radius: 5px;
+  margin: 5% 25% 0% 25%;
+  color: white;
+  background-color: #FE796A;
   font-weight: bold;
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 768px) {
-  #second-row {
+  main {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  main {
+  section {
     width: 50%;
   }
 
-  aside {
+  form {
     width: 30%;
-  }
-
-  #title {
-    font-size: 24px;
-    font-weight: lighter;
+    padding: 2% 3%;
   }
 }
 

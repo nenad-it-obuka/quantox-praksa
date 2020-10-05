@@ -1,10 +1,11 @@
 @import "colors";
 @import "fonts";
 
+
 * {
-    box-sizing: border-box;
-  }
-  
+  box-sizing: border-box;
+}
+
 body {
   background-image: linear-gradient(to bottom right, $topLeft, $middle, $bottomRight);
   background-attachment: fixed;
@@ -13,23 +14,24 @@ body {
   padding: 2%;
 }
   
-header {
-  display: flex;
-  justify-content: space-between;           
-}
-  
 img {
   max-width: 100%;
   height: auto;
 }
-  
-#second-row {
-  display: flex;    
-  flex-direction: column;
+
+header {
+  display: flex;
+  justify-content: space-between;     
+  padding-bottom: 1%;
 }
-  
-#desc {
-  margin-top: 5%;
+
+main {
+  display: flex;
+  flex-direction: column;  
+}
+
+section {
+  padding-top: 4%;
 }
   
 #desc-first {          
@@ -38,28 +40,30 @@ img {
   font-weight: bold;
 }
   
-#desc-second {      
-  color: $primary;
+#desc-second {        
   font-size: $large;
   font-weight: bold;
 }
-  
-aside {
-  width: 100%;      
-  background-color: $primary;
-  color: $secondary;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 3%;
+
+#web-graphic {
+  max-width: 80%;
 }
-  
+
 form {
   width: 100%;  
-  margin: auto;
-  font-weight: bold;
-  padding: 3% 3% 0% 3%;
+  padding: 8%;
+  color: $secondary;
+  background-color: $primary;
+  font-weight: bold;  
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
 }
   
+#title {
+  font-size: $larger;
+  font-weight: lighter;
+}
+
 label {
   font-size: $small;
 }
@@ -70,37 +74,33 @@ label {
   
 .fields {
   width: 100%;
-  border: none;    
-  border-bottom: 1px solid $border;
   margin: 3% 0%;
+  border: none;    
+  border-bottom: 1px solid $border;  
 }
   
 #submit-button {
   width: 50%;  
-  background-color: $submitBackground;
-  color: $primary;
   padding: 3% 5%;
-  margin: 5% 25%;
-  border-radius: 5px;
+  margin: 5% 25% 0% 25%;
+  color: $primary;
+  background-color: $submitBackground;  
   font-weight: bold;
+  border-radius: 5px;  
 }
   
 @media only screen and (min-width: 768px) {
-  #second-row {
-    flex-direction: row;    
-    justify-content: space-between;   
-  }
-  
   main {
-    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;    
   }
   
-  aside {
-    width: 30%;          
+  section {
+    width: 50%;    
   }
-  
-  #title {
-    font-size: $larger;
-    font-weight: lighter;
+
+  form {
+    width: 30%;
+    padding: 2% 3%;
   }
 }

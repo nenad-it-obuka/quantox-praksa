@@ -1,6 +1,6 @@
-# Web development internship
+# Web development internship project
 
-Web development internship at Quantox Technology company, Belgrade RS.   
+Web development internship project at Quantox Technology company, Belgrade RS.   
    
 Mentoring by Ivan Radeljic.<br><br>
 
