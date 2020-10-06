@@ -1,4 +1,4 @@
-# Web development internship project
+# Web development internship
 
 Web development internship project at Quantox Technology company, Belgrade RS.   
    
