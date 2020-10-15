@@ -3,7 +3,17 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: 'production',  
+  mode: 'development',    
+
+  devServer: {
+    contentBase: './dist',
+    stats: 'errors-warnings',   
+    hot: true,
+  },    
+
+  optimization: {
+    minimize: false,
+  },
 
   module: {
     rules: [
@@ -12,9 +22,9 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
-          'sass-loader'
+          'sass-loader',
         ],
-      },
+      },      
       {
         test: /\.(gif|jpe?g|png|svg)$/i,          
         use: [
@@ -27,7 +37,7 @@ module.exports = {
           },
         ],
       },
-    ],
+    ]
   },
 
   plugins: [
