@@ -18,7 +18,7 @@ Make sure you have installed all of the following prerequisites on your developm
 ## Sass build tool
 
 Sass should be compiled using Webpack module bundler and its sass-loader.   
-For more about Webpack and sass-loader, see official [Webpack](https://v4.webpack.js.org/concepts/) documentation and configuration for [sass-loader](https://v4.webpack.js.org/loaders/sass-loader/).<br><br>
+For more about Webpack and sass-loader, see [official Webpack documentation](https://v4.webpack.js.org/concepts/) and configuration for its [sass-loader](https://v4.webpack.js.org/loaders/sass-loader/).<br><br>
 
 
 ## Author      
