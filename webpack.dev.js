@@ -7,7 +7,9 @@ module.exports = {
 
   devServer: {
     contentBase: './dist',
-    stats: 'errors-warnings',   
+    stats: {
+      logging: 'warn'  // Value 'warn' tells stats to log errors and warnings only.
+    },
     hot: true,
   },    
 
