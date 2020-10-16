@@ -7,7 +7,7 @@ import "./images/logo.png";
 
 if (module.hot) {
   module.hot.accept(
-    console.log("Module update accepted!") // Intentionally leaved as confirmation 
-                                           // that hot module replacement works.
+    console.log("Module update accepted!") // Intentionally leaved as confirmation that hot module replacement works.
   );
 };
+
