@@ -6,6 +6,7 @@ module.exports = {
   mode: 'development',    
 
   devServer: {
+    port: 8000,
     contentBase: './dist',
     stats: {
       logging: 'warn'  // Value 'warn' tells stats to log errors and warnings only.
