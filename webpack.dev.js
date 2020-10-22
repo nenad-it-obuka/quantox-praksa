@@ -7,7 +7,7 @@ module.exports = {
 
   devServer: {
     port: 8000,
-    contentBase: './dist',
+    contentBase: path.join(__dirname, 'dist'),
     stats: {
       logging: 'warn'  // Value 'warn' tells stats to log errors and warnings only.
     },
