@@ -18,8 +18,19 @@ module.exports = {
     minimize: false,
   },
 
-  module: {
+  module: {    
     rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+
       {
         test: /\.s[ac]ss$/i,
         use: [
@@ -28,6 +39,7 @@ module.exports = {
           'sass-loader',
         ],
       },      
+
       {
         test: /\.(gif|jpe?g|png|svg)$/i,          
         use: [
