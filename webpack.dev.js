@@ -8,9 +8,7 @@ module.exports = {
   devServer: {
     port: 8000,
     contentBase: path.join(__dirname, 'dist'),
-    stats: {
-      logging: 'warn'  // Value 'warn' tells stats to log errors and warnings only.
-    },
+    clientLogLevel: 'warn', // Value 'warn' tells stats to log errors and warnings only.
     hot: true,
   },    
 
@@ -21,6 +19,14 @@ module.exports = {
   module: {    
     rules: [
       {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
+
+      {
         test: /\.s[ac]ss$/i,
         use: [
           'style-loader',
@@ -28,7 +34,7 @@ module.exports = {
           'sass-loader',
         ],
       },      
-
+      
       {
         test: /\.(gif|jpe?g|png|svg)$/i,          
         use: [
@@ -40,15 +46,7 @@ module.exports = {
             },
           },
         ],
-      },
-
-      {
-        test: /\.m?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      }
+      }      
     ]
   },
 
