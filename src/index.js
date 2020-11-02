@@ -1,6 +1,5 @@
 import "./sass/main.scss";
-import "./images/image.png";
-import "./images/logo.png";
+require.context("./images");
 
 
 
@@ -10,4 +9,3 @@ if (module.hot) {
     console.log("Module update accepted!") // Intentionally leaved as confirmation that hot module replacement works.
   );
 };
-
