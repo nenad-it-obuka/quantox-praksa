@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route, Switch } from "react-router";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import "./sass/main.scss";
 require.context("./images");
 
