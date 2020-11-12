@@ -9,7 +9,7 @@ module.exports = {
     port: 8000,
     contentBase: path.join(__dirname, 'dist'),
     clientLogLevel: 'warn', // Value 'warn' tells stats to log errors and warnings only.
-    hot: true,
+    hot: true    
   },    
 
   optimization: {

@@ -1,8 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import App from "./App";
 import "./sass/main.scss";
 require.context("./images");
+
+
+
+
+let destination = document.getElementById("root");
+
+
+ReactDOM.render(  
+  <App/>,   
+  destination
+);
+
+
+
+
+
 
 
 
