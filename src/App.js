@@ -1,6 +1,6 @@
 import React from "react";
 import {   
-  BrowserRouter, 
+  BrowserRouter,   
   Switch, 
   Route
 } from "react-router-dom";
@@ -14,8 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
-        <div>        
-          
+        <div>                  
           <Switch>
             <Route path="/confirmation">
               <Confirmation />
