@@ -10,8 +10,8 @@ require.context("./images");
 let destination = document.getElementById("root");
 
 
-ReactDOM.render(  
-  <App/>,   
+ReactDOM.render(      
+  <App/>,
   destination
 );
 

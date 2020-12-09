@@ -1,9 +1,6 @@
 import React from "react";
-import {   
-  BrowserRouter,   
-  Switch, 
-  Route
-} from "react-router-dom";
+import { Router, Switch, Route } from "react-router-dom";
+import history from './history';
 import Home from "./pages/Home";
 import Confirmation from "./pages/Confirmation";
 
@@ -13,7 +10,7 @@ import Confirmation from "./pages/Confirmation";
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router history={history}>
         <div>                  
           <Switch>
             <Route path="/confirmation">
@@ -24,7 +21,7 @@ class App extends React.Component {
             </Route>
           </Switch>
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }

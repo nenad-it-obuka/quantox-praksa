@@ -19,6 +19,10 @@ img {
   height: auto;
 }
 
+a {
+  color: $primary;
+}
+
 header {
   display: flex;
   justify-content: space-between;     
@@ -72,7 +76,7 @@ label {
   color: $warning;
 }
   
-.fields {
+input, select {
   width: 100%;
   margin: 3% 0%;
   border: none;    
@@ -87,6 +91,18 @@ label {
   background-color: $submitBackground;  
   font-weight: bold;
   border-radius: 5px;  
+}
+
+.error {  
+  border: 1px solid $warning;  
+  border-radius: 5px;
+}
+
+.errorsMessage {    
+  position: absolute;  
+  right: 80px;
+  color: $warning;
+  font-size: $small;
 }
   
 @media only screen and (min-width: 768px) {
@@ -103,8 +119,4 @@ label {
     width: 30%;
     padding: 2% 3%;
   }
-}
-
-a {
-  color: $primary;
 }
